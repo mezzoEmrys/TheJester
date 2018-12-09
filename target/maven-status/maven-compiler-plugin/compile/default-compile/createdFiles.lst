@@ -1,0 +1,10 @@
+jevilmod\JevilMod.class
+jevilmod\cards\JevilStrike.class
+jevilmod\relics\JevilCard.class
+jevilmod\EnergyOrbJevil.class
+jevilmod\actions\CarouselRelicAction.class
+jevilmod\JevilEnum.class
+jevilmod\cards\JevilDefend.class
+jevilmod\Jevil.class
+jevilmod\MezUtils.class
+jevilmod\relics\Carousel.class

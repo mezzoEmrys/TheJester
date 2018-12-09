@@ -1,9 +1,0 @@
-{
-  "Carousel": {
-    "NAME": "Carousel",
-    "FLAVOR": "Let's ride the carousel game!",
-    "DESCRIPTIONS": [
-      "At the beginning of your turn, exhaust a card in your hand, then add a random card to your hand."
-    ]
-  }
-}

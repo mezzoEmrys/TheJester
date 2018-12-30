@@ -4,9 +4,9 @@
   "author_list": ["mezzoEmrys"],
   "description": "A fun character for when you want a little chaos, chaos.",
   "dependencies": ["basemod"],
-  "version": "1.1.0",
+  "version": "1.1.1",
   "credits": "Special Thanks to: \nChronometrics - helped with explaining StS modding",
   "sts_version": "12-06-2018",
   "mts_version": "3.6.2",
-  "update-json": "https://api.github.com/repos/mezzoEmrys/TheJester/releases/latest"
+  "update_json": "https://api.github.com/repos/mezzoEmrys/TheJester/releases/latest"
 }

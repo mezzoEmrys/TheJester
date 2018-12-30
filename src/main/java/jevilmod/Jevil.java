@@ -39,7 +39,7 @@ public class Jevil extends CustomPlayer {
         super(name, JevilEnum.JEVIL_CLASS, null, "jevil_images/char/orb/vfx2.png", new SpriterAnimation(JEVIL_ANIMATION));
 
         initializeClass(null, JEVIL_SHOULDER_2, JEVIL_SHOULDER_1, JEVIL_CORPSE,
-                getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(ENERGY_PER_TURN));
+                getLoadout(), 20.0F, -20.0F, 220.0F, 290.0F, new EnergyManager(ENERGY_PER_TURN));
 
         this.energyOrb = new EnergyOrbJevil();
     }
@@ -54,7 +54,7 @@ public class Jevil extends CustomPlayer {
         ArrayList<String> list = new ArrayList<>();
         list.add("Metamorphosis");
         list.add("Chrysalis");
-        list.add("Enlightenment");
+        list.add("Chaos");
         repeat(4, i-> list.add("Strike_J"));
         repeat(4, i-> list.add("Defend_J"));
         return list;
@@ -113,7 +113,7 @@ public class Jevil extends CustomPlayer {
     public AbstractPlayer newInstance() { return new Jevil(this.name); }
 
     @Override
-    public String getSpireHeartText() { return "You prepare a CHAOS BOMB just FOR THE HEART.";}
+    public String getSpireHeartText() { return "Get ready for the big trick, boisengirls!";}
 
     @Override
     public Color getSlashAttackColor() { return Color.LIGHT_GRAY; }

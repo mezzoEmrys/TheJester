@@ -3,7 +3,14 @@
     "NAME": "Carousel",
     "FLAVOR": "Let's ride the carousel game!",
     "DESCRIPTIONS": [
-      "At the beginning of your turn, exhaust a card in your hand, then add a random card to your hand."
+      "At the start of your turn, exhaust a card, then add a random card to your hand."
+    ]
+  },
+  "Big Top": {
+    "NAME": "Big Top",
+    "FLAVOR": "The top crackles with freedom.",
+    "DESCRIPTIONS": [
+      "Start each combat with Mayhem."
     ]
   }
 }

@@ -2,6 +2,7 @@ package jevilmod;
 
 import basemod.BaseMod;
 import basemod.ReflectionHacks;
+import basemod.abstracts.CustomUnlockBundle;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
@@ -10,8 +11,10 @@ import com.megacrit.cardcrawl.audio.Sfx;
 import com.megacrit.cardcrawl.audio.SoundMaster;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.RelicStrings;
+import com.megacrit.cardcrawl.unlock.AbstractUnlock;
 import jevilmod.cards.JevilDefend;
 import jevilmod.cards.JevilStrike;
+import jevilmod.relics.BigTop;
 import jevilmod.relics.Carousel;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -21,7 +24,7 @@ import java.util.HashMap;
 
 @SpireInitializer
 public class JevilMod implements EditCharactersSubscriber,
-        EditRelicsSubscriber, EditCardsSubscriber, PostInitializeSubscriber, EditStringsSubscriber {
+        EditRelicsSubscriber, EditCardsSubscriber, PostInitializeSubscriber, EditStringsSubscriber, SetUnlocksSubscriber {
 
     public static final Logger logger = LogManager.getLogger(JevilMod.class.getName());
 
@@ -50,6 +53,7 @@ public class JevilMod implements EditCharactersSubscriber,
     @Override
     public void receiveEditRelics() {
         BaseMod.addRelic(new Carousel(), RelicType.SHARED);
+        BaseMod.addRelic(new BigTop(), RelicType.SHARED);
     }
 
     @Override
@@ -75,5 +79,11 @@ public class JevilMod implements EditCharactersSubscriber,
     public void receiveEditStrings() {
         String relicStrings = Gdx.files.internal("localization/jevilRelics.json").readString(String.valueOf(StandardCharsets.UTF_8));
         BaseMod.loadCustomStrings(RelicStrings.class, relicStrings);
+    }
+
+    @Override
+    public void receiveSetUnlocks() {
+        BaseMod.addUnlockBundle(new CustomUnlockBundle(AbstractUnlock.UnlockType.MISC,
+                "", "", ""), JevilEnum.JEVIL_CLASS, 1);
     }
 }

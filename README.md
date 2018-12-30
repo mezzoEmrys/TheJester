@@ -1,7 +1,7 @@
 # TheJester
 The Jester is a custom Slay the Spire character themed after the Jevil character from Toby Fox's game, Deltarune. The character is notable for having a card pool consisting of all cards, including those of other modded characters, and a unique relic. 
 
-Contains a complete character with custom artwork, and a relic to make it more or less consistent.
+Contains a complete character with custom artwork, and a relic to make it more or less consistent. Additionally contains another shared relic which is thematic.
 
 
 ## Installation Instructions
